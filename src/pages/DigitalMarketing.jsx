@@ -54,7 +54,7 @@ const DigitalMarketing = () => {
                 title="Digital Marketing Services"
                 description="Data-driven marketing strategies to grow your audience and convert visitors into customers."
                 gradient="from-orange-500 via-red-500 to-pink-500"
-                backgroundImage="/banner-img/e-com_banner.jpg"
+                backgroundImage="/banner-img/digital_banner.jpg"
             />
             <DigitalMarketingServices />
             <BenefitsTileSection

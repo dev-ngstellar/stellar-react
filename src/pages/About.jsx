@@ -13,7 +13,7 @@ const About = () => {
             <BannerCommon
                 badgeText="About Us"
                 title="Powering Business Growth <br/> Through Technology"
-                description="Streamline your business's financial management with our intuitive, scalable platform."
+                description="From strategy to execution, our technology solutions help businesses grow faster, smarter, and stronger"
                 backgroundImage="/banner-img/1.jpg"
             >
                 <motion.button

@@ -12,13 +12,13 @@ function Home() {
   return (
     <div className="min-h-screen">
       <HeroSection />
+      <StatsSection />
       <AboutSection />
       <ServicesSection />
       <WhyChooseUs />
-      <StatsSection />
       <PortfolioSection />
-      <TestimonialsSection />
       <ClientsSection />
+      <TestimonialsSection />
       <ContactSection />
     </div>
   );

@@ -9,9 +9,10 @@ import cl7 from '../assets/cl-7.png';
 import cl8 from '../assets/cl-8.png';
 import cl9 from '../assets/cl-9.png';
 import cl10 from '../assets/cl-10.png';
+import cl11 from '../assets/cl-11.png';
 
 const ClientsSection = () => {
-  const clients = [cl1, cl2, cl3, cl4, cl5, cl6, cl7, cl8, cl9, cl10];
+  const clients = [cl1, cl2, cl3, cl4, cl5, cl6, cl7, cl8, cl9, cl10,cl11];
 
   return (
     <section className="py-12 bg-gray-50 border-t border-gray-200">

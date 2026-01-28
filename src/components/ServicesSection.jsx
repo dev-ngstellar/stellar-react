@@ -738,7 +738,7 @@ const ServicesSection = () => {
                   >
                     <motion.button
                       onClick={() => setSelectedService(index)}
-                      className="w-full text-left py-6 px-0 group relative"
+                      className="w-full text-left py-6 px-0 group relative hover:cursor-pointer"
                       whileTap={{ scale: 0.98 }}
                     >
                       <div className="flex items-center justify-between">

@@ -58,7 +58,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="pt-24 pb-10 min-h-screen bg-[#0B1121] font-sans px-4 md:px-10 overflow-hidden">
+    <div className="pt-30 pb-10 min-h-screen bg-[#0B1121] font-sans px-4 md:px-10 overflow-hidden">
       <div className="relative w-full max-w-7xl mx-auto min-h-[90vh] bg-white/5 backdrop-blur-3xl rounded-[3.5rem] border border-white/10 overflow-hidden flex items-center justify-center p-8 md:p-16 shadow-2xl">
 
         {/* LIGHT EFFECTS */}

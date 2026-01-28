@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -20,12 +20,27 @@
   --animate-star-movement-top: star-movement-top linear infinite alternate;
 
   @keyframes star-movement-bottom {
-    0% { transform: translate(0%, 0%); opacity: 1; }
-    100% { transform: translate(-100%, 0%); opacity: 0; }
+    0% {
+      transform: translate(0%, 0%);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translate(-100%, 0%);
+      opacity: 0;
+    }
   }
+
   @keyframes star-movement-top {
-    0% { transform: translate(0%, 0%); opacity: 1; }
-    100% { transform: translate(100%, 0%); opacity: 0; }
+    0% {
+      transform: translate(0%, 0%);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translate(100%, 0%);
+      opacity: 0;
+    }
   }
 }
 
@@ -116,8 +131,13 @@ button:focus-visible {
 }
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-scroll {
@@ -128,4 +148,12 @@ button:focus-visible {
 
 .animate-scroll:hover {
   animation-play-state: paused;
+}
+
+.font-jakarta {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
 }

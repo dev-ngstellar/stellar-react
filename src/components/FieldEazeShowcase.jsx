@@ -45,13 +45,7 @@ const FieldEazeShowcase = () => {
                             At Stellar Solutions, we know that reliability is key when it comes to your field data. That's why we've built a platform that's not only secure but also transparent, user-friendly, and focused on your team's productivity. Here's why you can trust FieldEaze with your business journey.
                         </p>
 
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="px-8 py-3 rounded-full bg-gradient-to-r from-[#2BFFFF] hover:cursor-pointer to-teal-500 text-black shadow-lg hover:cursor-pointer transition-all duration-300 text-xs font-bold tracking-widest uppercase"
-                        >
-                            Get Started
-                        </motion.button>    
+                         
                     </div>
                 </motion.div>
 

@@ -53,7 +53,7 @@ const DesignServices = () => {
                 title="Creative Design Services"
                 description="Transform your brand with stunning visuals and intuitive designs that captivate your audience."
                 gradient="from-purple-500 via-pink-500 to-red-500"
-                backgroundImage="/public/banner-img/design_banner.jpg"
+                backgroundImage="/banner-img/design_banner.jpg"
             />
             <DesignServicesComponent />
             <BenefitsTileSection

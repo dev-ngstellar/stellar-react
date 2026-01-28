@@ -4,7 +4,7 @@ import {
     PenTool,
     Video,
     Film,
-    Monitor,
+    CreditCard,
     Layers,
     Image,
     Layout,
@@ -34,29 +34,14 @@ const services = [
         description: "Simplify complex concepts with engaging explainer videos that captivate and educate your audience."
     },
     {
-        icon: Film,
-        title: "Animation Videos",
-        description: "Bring your stories to life with high-quality 2D and 3D animation services for marketing and entertainment."
-    },
-    {
-        icon: Monitor,
-        title: "Motion Graphics",
-        description: "Enhance your video content with dynamic motion graphics that add a professional touch to your brand."
-    },
-    {
         icon: Layers,
         title: "Brand Identity",
         description: "Build a cohesive brand image with our comprehensive branding services, including style guides and collateral."
     },
     {
-        icon: Image,
-        title: "Print Design",
-        description: "Get high-quality print materials like business cards, flyers, and banners designed to leave a lasting impression."
-    },
-    {
-        icon: Package,
-        title: "Packaging Design",
-        description: "Stand out on the shelves with creative packaging designs that protect your product and attract customers."
+        icon: CreditCard,
+        title: "Business Cards",
+        description: "Professionally designed business cards that showcase your brand and contact details with style."
     }
 ];
 

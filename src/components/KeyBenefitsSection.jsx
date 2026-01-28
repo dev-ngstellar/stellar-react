@@ -95,8 +95,7 @@ const KeyBenefitsSection = () => {
                         transition={{ delay: 0.2 }}
                         className="text-gray-400 max-w-2xl mx-auto text-lg"
                     >
-                        Explore how our expert software engineering transforms your business operations with efficiency, security, and innovation. 
-                    </motion.p>
+                        Discover how our expert software engineering streamlines your operations through efficiency, security, and innovation.                  </motion.p>
                 </div>
 
                 {/* Grid */}

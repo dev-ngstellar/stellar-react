@@ -33,7 +33,7 @@ const BannerCommon = ({
                     <img
                         src={backgroundImage}
                         alt="Banner Background"
-                        className="w-full h-full object-cover opacity-80"
+                        className="w-full h-full object-cover opacity-90"
                     />
                     <div className="absolute inset-0 bg-black/70" />
                 </div>

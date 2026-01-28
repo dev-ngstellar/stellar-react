@@ -10,9 +10,13 @@ import cl8 from '../assets/cl-8.png';
 import cl9 from '../assets/cl-9.png';
 import cl10 from '../assets/cl-10.png';
 import cl11 from '../assets/cl-11.png';
+import cl12 from '../assets/cl-12.jpg';
+import cl13 from '../assets/cl-13.jpg';
+import cl14 from '../assets/cl-14.jpg';
+import cl15 from '../assets/cl-15.jpg';
 
 const ClientsSection = () => {
-  const clients = [cl1, cl2, cl3, cl4, cl5, cl6, cl7, cl8, cl9, cl10,cl11];
+  const clients = [cl1, cl2, cl3, cl4, cl5, cl6, cl7, cl8, cl9, cl10,cl11,cl12,cl13,cl14,cl15];
 
   return (
     <section className="py-12 bg-gray-50 border-t border-gray-200">

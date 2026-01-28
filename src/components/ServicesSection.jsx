@@ -156,7 +156,7 @@ const ServiceVisualCard = ({ service, index }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-white/10 rounded-lg p-6 h-32 flex flex-col justify-center"
+            className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 rounded-lg p-6 h-32 flex flex-col justify-center"
           >
             <motion.h4
               initial={{ opacity: 0 }}
@@ -245,7 +245,7 @@ const ServiceVisualCard = ({ service, index }) => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: activeTab === 0 ? -20 : 20 }}
             transition={{ duration: 0.3 }}
-            className="bg-white/5 border border-white/10 rounded-lg p-4 h-40 overflow-auto"
+            className="bg-white/5 rounded-lg p-4 h-40 overflow-auto"
           >
             {currentContent.code ? (
               <motion.pre
@@ -366,7 +366,7 @@ const ServiceVisualCard = ({ service, index }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3 }}
-            className="bg-white/5 border border-white/10 rounded-xl p-6 space-y-4 shadow-lg"
+            className="bg-white/5 rounded-xl p-6 space-y-4 shadow-lg"
           >
             {/* Title with purple background */}
             <motion.div
@@ -461,7 +461,7 @@ const ServiceVisualCard = ({ service, index }) => {
             animate={{ opacity: 1, rotateY: 0 }}
             exit={{ opacity: 0, rotateY: 90 }}
             transition={{ duration: 0.4 }}
-            className="bg-white/5 border border-white/10 rounded-xl p-6 space-y-4 shadow-lg"
+            className="bg-white/5 rounded-xl p-6 space-y-4 shadow-lg"
           >
             <motion.h4
               initial={{ opacity: 0 }}
@@ -489,34 +489,34 @@ const ServiceVisualCard = ({ service, index }) => {
         </AnimatePresence>
 
         {/* Tabs */}
-          {tabs.map((tab, idx) => (
-            <motion.button
-              key={tab.key}
-              onClick={() => setActiveTab(idx)}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className={`rounded px-3 py-1 text-xs font-medium transition-all duration-300 ${activeTab === idx
-                ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
-                : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white'
-                }`}
-            >
-              {tab.label}
-            </motion.button>
-          ))}
-        
+        {tabs.map((tab, idx) => (
+          <motion.button
+            key={tab.key}
+            onClick={() => setActiveTab(idx)}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={`rounded px-3 py-1 text-xs font-medium transition-all duration-300 ${activeTab === idx
+              ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
+              : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white'
+              }`}
+          >
+            {tab.label}
+          </motion.button>
+        ))}
+
         {/* Creative Suite Section */}
         <div className="mt-auto pt-6 border-t border-white/5">
           <p className="text-[10px] text-gray-500 font-bold tracking-wider uppercase mb-3">Creative Suite</p>
           <div className="flex gap-4">
-             <div className="w-8 h-8 rounded bg-white/5 flex items-center justify-center border border-white/10" title="Photoshop">
-                <span className="text-[10px] font-bold text-blue-500">Ps</span>
-             </div>
-             <div className="w-8 h-8 rounded bg-white/5 flex items-center justify-center border border-white/10" title="Indesign">
-                <span className="text-[10px] font-bold text-pink-600">Id</span>
-             </div>
-             <div className="w-8 h-8 rounded bg-white/5 flex items-center justify-center border border-white/10" title="Illustrator">
-                <span className="text-[10px] font-bold text-orange-500">Ai</span>
-             </div>
+            <div className="w-8 h-8 rounded bg-white/5 flex items-center justify-center border border-white/10" title="Photoshop">
+              <span className="text-[10px] font-bold text-blue-500">Ps</span>
+            </div>
+            <div className="w-8 h-8 rounded bg-white/5 flex items-center justify-center border border-white/10" title="Indesign">
+              <span className="text-[10px] font-bold text-pink-600">Id</span>
+            </div>
+            <div className="w-8 h-8 rounded bg-white/5 flex items-center justify-center border border-white/10" title="Illustrator">
+              <span className="text-[10px] font-bold text-orange-500">Ai</span>
+            </div>
           </div>
         </div>
       </motion.div>
@@ -552,7 +552,7 @@ const ServiceVisualCard = ({ service, index }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 border border-white/10 rounded-lg p-6 h-32 flex flex-col justify-center"
+            className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 rounded-lg p-6 h-32 flex flex-col justify-center"
           >
             <motion.h4
               initial={{ opacity: 0 }}
@@ -580,34 +580,34 @@ const ServiceVisualCard = ({ service, index }) => {
         </AnimatePresence>
 
         {/* Tabs */}
-          {tabs.map((tab, idx) => (
-            <motion.button
-              key={tab.key}
-              onClick={() => setActiveTab(idx)}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className={`rounded px-3 py-1 text-xs font-medium transition-all duration-300 ${activeTab === idx
-                ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
-                : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white'
-                }`}
-            >
-              {tab.label}
-            </motion.button>
-          ))}
-       
+        {tabs.map((tab, idx) => (
+          <motion.button
+            key={tab.key}
+            onClick={() => setActiveTab(idx)}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={`rounded px-3 py-1 text-xs font-medium transition-all duration-300 ${activeTab === idx
+              ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
+              : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white'
+              }`}
+          >
+            {tab.label}
+          </motion.button>
+        ))}
+
         {/* Analytics Tools Section */}
         <div className="mt-auto pt-6 border-t border-white/5">
           <p className="text-[10px] text-gray-500 font-bold tracking-wider uppercase mb-3">Analytics Tools</p>
           <div className="flex gap-4">
-             <div className="w-8 h-8 rounded bg-white/5 flex items-center justify-center border border-white/10" title="Google Analytics">
-                <span className="text-[10px] font-bold text-yellow-500">GA</span>
-             </div>
-             <div className="w-8 h-8 rounded bg-white/5 flex items-center justify-center border border-white/10" title="Semrush">
-                <span className="text-[10px] font-bold text-orange-400">Sm</span>
-             </div>
-             <div className="w-8 h-8 rounded bg-white/5 flex items-center justify-center border border-white/10" title="Ahrefs">
-                <span className="text-[10px] font-bold text-blue-500">Ah</span>
-             </div>
+            <div className="w-8 h-8 rounded bg-white/5 flex items-center justify-center border border-white/10" title="Google Analytics">
+              <span className="text-[10px] font-bold text-yellow-500">GA</span>
+            </div>
+            <div className="w-8 h-8 rounded bg-white/5 flex items-center justify-center border border-white/10" title="Semrush">
+              <span className="text-[10px] font-bold text-orange-400">Sm</span>
+            </div>
+            <div className="w-8 h-8 rounded bg-white/5 flex items-center justify-center border border-white/10" title="Ahrefs">
+              <span className="text-[10px] font-bold text-blue-500">Ah</span>
+            </div>
           </div>
         </div>
       </motion.div>
@@ -738,7 +738,7 @@ const ServicesSection = () => {
                   >
                     <motion.button
                       onClick={() => setSelectedService(index)}
-                      className="w-full text-left py-6 px-0 group relative hover:cursor-pointer"
+                      className="w-full text-left py-6 px-0 group relative hover:cursor-pointer outline-none focus:outline-none"
                       whileTap={{ scale: 0.98 }}
                     >
                       <div className="flex items-center justify-between">

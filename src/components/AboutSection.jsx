@@ -30,8 +30,9 @@ const AboutSection = () => {
 
           {/* RIGHT – CONTENT */}
           <div className="w-full md:w-1/2 space-y-6 lg:space-y-8">
-            <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold font-inter">
-              About Us
+            <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold font-inter ">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2BFFFF] via-blue-400 to-[#3981d4]">About Us</span>
+
             </h2>
 
             <p className="text-gray-300 text-[18px] leading-relaxed font-inter">

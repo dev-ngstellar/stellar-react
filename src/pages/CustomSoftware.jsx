@@ -51,8 +51,8 @@ const CustomSoftware = () => {
         <div className="bg-[#020813] min-h-screen pt-24 font-sans selection:bg-blue-500/30">
             <BannerCommon
                 badgeText="Services"
-                title="Custom Software Development"
-                description="Tailor-made software solutions engineered to solve your unique business challenges."
+                title="Custom Software Development Services That <br/> Drive Efficiency and Growth"
+                description="Custom Software Development Services That Drive Efficiency and Growth Tailored software solutions that streamline operations and boost productivity."
                 gradient="from-emerald-500 via-teal-500 to-cyan-500"
                 backgroundImage="/banner-img/custom-software_banner.jpg"
             />

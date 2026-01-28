@@ -51,8 +51,8 @@ const DigitalMarketing = () => {
         <div className="bg-[#020813] min-h-screen pt-24 font-sans selection:bg-blue-500/30">
             <BannerCommon
                 badgeText="Services"
-                title="Digital Marketing Services"
-                description="Data-driven marketing strategies to grow your audience and convert visitors into customers."
+                title="Elevate Your Online Visibility with Result-Driven <br/> Digital Marketing Services"
+                description="Elevate Your Online Visibility with Result-Driven Digital Marketing Services SEO, PPC, and marketing strategies that drive traffic, leads, and conversions."
                 gradient="from-orange-500 via-red-500 to-pink-500"
                 backgroundImage="/banner-img/digital_banner.jpg"
             />

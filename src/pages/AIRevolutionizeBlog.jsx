@@ -8,7 +8,7 @@ const AIRevolutionizeBlog = () => {
             title="How AI Tools Are Revolutionizing Website Development"
             subtitle="Explore how Artificial Intelligence is transforming the way we build, design, and optimize websites."
             author="Stellar Solutions"
-            date="January 26, 2026"
+            date={new Date().toDateString()}
             readTime="7 min read"
             image={blogImage}
             category="Web Development"

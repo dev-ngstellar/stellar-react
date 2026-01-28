@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#020813] pt-20 pb-10 font-sans overflow-hidden">
+    <footer className="relative bg-[#020813] pt-10 pb-10 font-sans overflow-hidden">
       {/* Background Effects */}
       <div className="absolute top-0 left-0 w-full flex justify-center pointer-events-none">
         <div className="relative w-[85%] h-[2px]">
@@ -24,10 +24,16 @@ const Footer = () => {
               stands out in the crowded online landscape.
             </p>
             <div className="flex gap-3 pt-2">
-              {[FaFacebookF, FaLinkedinIn, FaInstagram].map((Icon, idx) => (
+              {[
+                { Icon: FaFacebookF, link: "https://www.facebook.com/StellarSolutionz/" },
+                { Icon: FaLinkedinIn, link: "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3Ftrk%3Dguest_homepage-basic_google-one-tap-submit" },
+                { Icon: FaInstagram, link: "https://www.instagram.com/stellarsolutions_official/?fbclid=IwY2xjawK3QARleHRuA2FlbQIxMQBicmlkETFIS1Vya1FtQkJJTkVlNVBJAR4ycF6DAIwChHa6yWweB7vbEIJg7UYQniyogGUOym7WsXcvpPtanP4CQvvULQ_aem_CnVXpS1kAd_duPAglvxyug" }
+              ].map(({ Icon, link }, idx) => (
                 <a
                   key={idx}
-                  href="#"
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 flex items-center justify-center rounded-full border border-white/10 !text-gray-400 hover:border-[#2BFFFF] hover:!text-[#2BFFFF] hover:bg-[#2BFFFF]/10 transition-all duration-300"
                 >
                   <Icon size={14} />
@@ -40,20 +46,20 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-white font-semibold text-base uppercase tracking-wider">Our Services</h3>
             <ul className="space-y-3 text-sm">
-                {[
-                  { name: "E-commerce Website Development", path: "/services/ecommerce" },
-                  { name: "Website Design and Development", path: "/services/website" },
-                  { name: "Custom Software Development", path: "/services/custom-software" },
-                  { name: "Digital Marketing Services", path: "/services/digital-marketing" },
-                  { name: "Mobile App Development", path: "/services/mobile" },
-                  { name: "Design Services", path: "/services/website" }
-                ].map((item) => (
-                  <li key={item.name}>
-                    <Link to={item.path} className="!text-gray-400 hover:!text-[#2BFFFF] transition-colors hover:translate-x-1 duration-200 block">
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
+              {[
+                { name: "E-commerce Website Development", path: "/services/ecommerce" },
+                { name: "Website Design and Development", path: "/services/website" },
+                { name: "Custom Software Development", path: "/services/custom-software" },
+                { name: "Digital Marketing Services", path: "/services/digital-marketing" },
+                { name: "Mobile App Development", path: "/services/mobile" },
+                { name: "Design Services", path: "/services/website" }
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link to={item.path} className="!text-gray-400 hover:!text-[#2BFFFF] transition-colors hover:translate-x-1 duration-200 block">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -63,8 +69,8 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               {[
                 { name: "About Us", path: "/about" },
-                { name: "Services", path: "/services" },
-                { name: "Our Products", path: "/products" },
+                { name: "Industries", path: "/industries" },
+                { name: "Blog", path: "/blog" },
                 { name: "Contact Us", path: "/contact" },
                 { name: "Privacy Policy", path: "/privacy" },
                 { name: "Terms and Conditions", path: "/terms" }

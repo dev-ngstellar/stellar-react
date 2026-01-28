@@ -51,8 +51,9 @@ const MobileAppDev = () => {
         <div className="bg-[#020813] min-h-screen pt-24 font-sans selection:bg-blue-500/30">
             <BannerCommon
                 badgeText="Services"
-                title="Mobile App Development"
-                description="Create powerful, engaging mobile experiences that connect with your users wherever they are."
+                title="Build Powerful Mobile Apps That <br /> Drive Business Growth"
+                description="Build Powerful Mobile Apps That Drive Business Growth
+Custom mobile apps built for performance, engagement, and scalability."
                 gradient="from-pink-500 via-purple-500 to-indigo-500"
                 backgroundImage="/banner-img/mobile-app_banner.jpg"
             />

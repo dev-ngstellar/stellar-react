@@ -41,7 +41,7 @@ export const industryList = [
         name: "Travel", 
         icon: <Plane className="w-10 h-10 text-[#2BFFFF]" />,
         description:"We provide comprehensive digital solutions designed to support the dynamic needs of the travel industry. Our services include travel website and mobile app development, online booking and reservation systems, itinerary management platforms, and integrations with global distribution systems (GDS) and payment gateways. We also develop solutions for tour operators, travel agencies, and hospitality providers, including CRM systems, customer loyalty programs, real-time pricing and availability management, and data analytics for demand forecasting. With user-centric UI/UX design and digital marketing solutions such as SEO and social media promotion, our digital solutions help travel businesses enhance customer experiences, streamline operations, and increase bookings in a highly competitive global market.",
-        image: "/industries/travel.webp" 
+        image: "/industries/travel.jpg" 
     },
     { 
         name: "Food", 

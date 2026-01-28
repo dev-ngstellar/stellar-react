@@ -12,8 +12,8 @@ const About = () => {
         <div className="min-h-screen bg-[#0a0a0a] text-white pt-24 font-sans selection:bg-[#2BFFFF]/30">
             <BannerCommon
                 badgeText="About Us"
-                title="Powering Business Growth <br/> Through Technology"
-                description="From strategy to execution, our technology solutions help businesses grow faster, smarter, and stronger"
+                title="Transforming Digital <br/> Dreams into Reality"
+                description="We turn innovative ideas into powerful, real-world digital solutions."
                 backgroundImage="/banner-img/1.jpg"
             >
                 <motion.button

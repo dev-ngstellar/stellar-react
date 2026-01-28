@@ -50,8 +50,8 @@ const DesignServices = () => {
         <div className="bg-[#020813] min-h-screen pt-24 font-sans selection:bg-purple-500/30">
             <BannerCommon
                 badgeText="Services"
-                title="Creative Design Services"
-                description="Transform your brand with stunning visuals and intuitive designs that captivate your audience."
+                title="Creative Design Services That <br /> Elevate Your Brand"
+                description="Creative Design Services That Elevate Your Brand Impactful designs that strengthen brand identity and captivate audiences."
                 gradient="from-purple-500 via-pink-500 to-red-500"
                 backgroundImage="/banner-img/design_banner.jpg"
             />

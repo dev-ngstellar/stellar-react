@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 
-const PortfolioItem = ({ title, image, category, delay }) => (
+const PortfolioItem = ({ title, image, category, delay, link }) => (
     <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -11,26 +11,28 @@ const PortfolioItem = ({ title, image, category, delay }) => (
         whileHover={{ y: -10 }}
         className="group relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer border border-white/10 bg-[#0A0F1C]"
     >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#2BFFFF]/20 to-[#3981d4]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
-        <img
-            src={image}
-            alt={title}
-            className="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#020813] via-[#020813]/60 to-transparent opacity-90 transition-opacity duration-300 flex flex-col justify-end p-8 z-20">
-            <motion.span
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: delay + 0.2 }}
-                className="text-[#2BFFFF] font-bold text-sm mb-2 uppercase tracking-wider"
-            >
-                {category}
-            </motion.span>
-            <h3 className="text-white text-2xl font-bold mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#2BFFFF] group-hover:via-blue-400 group-hover:to-[#3981d4] transition-all duration-300">
-                {title}
-            </h3>
-            <div className="w-12 h-1 bg-gradient-to-r from-[#2BFFFF] to-[#3981d4] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-        </div>
+        <NavLink to={link} className="block w-full h-full relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#2BFFFF]/20 to-[#3981d4]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
+            <img
+                src={image}
+                alt={title}
+                className="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#020813] via-[#020813]/60 to-transparent opacity-90 transition-opacity duration-300 flex flex-col justify-end p-8 z-20">
+                <motion.span
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: delay + 0.2 }}
+                    className="text-[#2BFFFF] font-bold text-sm mb-2 uppercase tracking-wider"
+                >
+                    {category}
+                </motion.span>
+                <h3 className="text-white text-2xl font-bold mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#2BFFFF] group-hover:via-blue-400 group-hover:to-[#3981d4] transition-all duration-300">
+                    {title}
+                </h3>
+                <div className="w-12 h-1 bg-gradient-to-r from-[#2BFFFF] to-[#3981d4] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            </div>
+        </NavLink>
     </motion.div>
 );
 
@@ -57,22 +59,25 @@ const PortfolioSection = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <PortfolioItem
-                        title="Green Earth Initiative"
+                        title="Corporate Website Redesign"
                         category="Web Design"
-                        image="https://img.freepik.com/free-photo/nature-design-concept-with-green-leaves_23-2149103673.jpg"
+                        image="/home/web-design-box.jpg"
                         delay={0}
+                        link="/blog"
                     />
                     <PortfolioItem
-                        title="TechGrow Solutions"
+                        title="Brand Identity Development"
                         category="Branding"
-                        image="https://img.freepik.com/free-vector/gradient-technology-background_23-2148884155.jpg"
+                        image="/home/branding-box.jpg"
                         delay={0.1}
+                        link="/blog"
                     />
                     <PortfolioItem
-                        title="Urban Smart City"
+                        title="Enterprise Mobile Application"
                         category="App Development"
-                        image="https://img.freepik.com/free-vector/smart-city-illustration_23-2148899884.jpg"
+                        image="/home/app-development-box.jpg"
                         delay={0.2}
+                        link="/blog"
                     />
                 </div>
                 <div className="flex justify-center mt-7">

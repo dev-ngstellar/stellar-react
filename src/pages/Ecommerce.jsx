@@ -51,8 +51,9 @@ const Ecommerce = () => {
         <div className="bg-[#020813] min-h-screen pt-24 font-sans selection:bg-blue-500/30">
             <BannerCommon
                 badgeText="Services"
-                title="Ecommerce Solutions"
-                description="Comprehensive e-commerce services designed to scale your business and drive sales."
+                title="Take Your Brand to the Next Level with Our Leading <br /> E-Commerce Website Development Services"
+                description="Take Your Brand to the Next Level with Our Leading E-Commerce Website Development Services
+High-performance e-commerce websites designed to sell, scale, and succeed."
                 gradient="from-blue-600 via-indigo-600 to-purple-600"
                 backgroundImage="/banner-img/e-com_banner.jpg"
             />

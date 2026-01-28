@@ -11,9 +11,9 @@ const StarBorder = ({
 }) => {
     return (
         <Component
-            className={`relative inline-block overflow-hidden rounded-full group ${className}`}
+            className={`relative inline-block overflow-hidden rounded-full group cursor-pointer ${className}`}
             style={{
-                padding: `${thickness}px 0`,
+                padding: `${thickness}px`,
                 ...rest.style
             }}
             {...rest}

@@ -58,7 +58,7 @@ const StatsSection = () => {
         <motion.div className="space-y-2 text-center pb-16">
           <div className="flex items-center gap-2 mb-6 justify-center">
             <span className="text-xl text-[#2BFFFF] animate-pulse">❖</span>
-            <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#2BFFFF] via-blue-400 to-[#3981d4]">OUR VISIONS</span>
+            <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#2BFFFF] via-blue-400 to-[#3981d4]">OUR ACHIEVEMENTS</span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight text-white">
             Numbers are telling{' '}
@@ -76,13 +76,13 @@ const StatsSection = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0 relative z-10">
-            <StatItem number="20+" label="Experienced Professionals" delay={0} />
+            <StatItem number="20+" label={<>Years of <br /> Industry Experience</>} delay={0} />
             <div className="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
-            <StatItem number="100+" label="Successful Projects" delay={0.1} />
+            <StatItem number="100+" label={<>Projects Successfully <br /> Completed</>} delay={0.1} />
             <div className="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
-            <StatItem number="80+" label="Years of Combined Experience" delay={0.2} />
+            <StatItem number="80+" label={<>Happy Clients <br /> around the World</>} delay={0.2} />
             <div className="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
-            <StatItem number="15+" label="Customers all over the world" delay={0.3} />
+            <StatItem number="15+" label={<>Services are given on <br /> different Technologies</>} delay={0.3} />
           </div>
         </motion.div>
       </div>

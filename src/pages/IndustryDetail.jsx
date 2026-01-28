@@ -79,24 +79,6 @@ const IndustryDetail = () => {
                                     {industry.description}
                                 </p>
                             </div>
-
-                            <div className="mt-12 pt-12 border-t border-white/10">
-                                <h3 className="text-2xl font-bold text-white mb-6">Why Choose Us for {industry.name}?</h3>
-                                <ul className="space-y-4">
-                                    {[
-                                        "Industry-specific domain expertise",
-                                        "Scalable and secure architecture",
-                                        "Compliance with industry standards",
-                                        "Seamless integration with existing systems",
-                                        "Ongoing support and maintenance"
-                                    ].map((item, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-gray-400">
-                                            <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#2BFFFF] flex-shrink-0" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
                         </motion.div>
                     </div>
 

@@ -67,7 +67,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
               className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tighter pb-4 select-none drop-shadow-2xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-white/40"
             >
-              Empowering Your <br /> Digital Journey
+              Building Future-Ready<br />  Digital Experiences
             </motion.h1>
 
             {/* Subtext MATCHING BannerCommon Style */}
@@ -77,17 +77,22 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
               className="relative z-10 text-gray-300/80 text-center max-w-2xl text-md md:text-lg mb-8 leading-relaxed font-light tracking-wide"
             >
-              Bring your ideas to life with stunning, responsive Digital Solutions. Let's create a digital presence that makes an impact!
-            </motion.p>
-            <StarBorder
-              as={Link}
-              to="/contact"
-              className="hover:cursor-pointer text-white font-bold tracking-widest uppercase text-xs"
-              color="#2BFFFF"
-              speed="3s"
+              Smart, scalable digital solutions built for tomorrow’s business success.            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.6, ease: "backOut" }}
             >
-              Get Started
-            </StarBorder>
+              <StarBorder
+                as={Link}
+                to="/contact"
+                className="text-white font-bold tracking-widest uppercase text-xs"
+                color="#2BFFFF"
+                speed="3s"
+              >
+                Get Started
+              </StarBorder>
+            </motion.div>
           </div>
 
           <div className="lg:col-span-6 flex items-center justify-center lg:justify-end relative">

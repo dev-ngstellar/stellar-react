@@ -119,11 +119,11 @@ const ContactUs = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <FaPhoneAlt className="text-[#2BFFFF] shrink-0" />
-                  <a href="tel:+918870659648" className="text-white font-medium hover:text-[#2BFFFF] transition-colors">+91 8870659648</a>
+                  <a href="tel:+918870659648" className="!text-white font-medium hover:text-[#2BFFFF] transition-colors">+91 8870659648</a>
                 </div>
                 <div className="flex items-center gap-3 border-b border-white/5 pb-4">
                   <FaEnvelope className="text-[#2BFFFF] shrink-0" />
-                  <a href="mailto:info@stellarsolutions.org" className="text-white font-medium hover:text-[#2BFFFF] transition-colors">info@stellarsolutions.org</a>
+                  <a href="mailto:info@stellarsolutions.org" className="!text-white font-medium hover:text-[#2BFFFF] transition-colors">info@stellarsolutions.org</a>
                 </div>
               </div>
 

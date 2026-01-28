@@ -51,8 +51,9 @@ const WebsiteDesign = () => {
         <div className="bg-[#020813] min-h-screen pt-24 font-sans selection:bg-blue-500/30">
             <BannerCommon
                 badgeText="Services"
-                title="Website Design & Development"
-                description="We leverage cutting edge technologies to ensure your digital footprint stands out in the crowded online landscape."
+                title="Take Your Online Presence to New Heights with the <br /> Magic of Website Development"
+                description="Take Your Online Presence to New Heights with the Magic of Website Development
+Fast, responsive websites that engage users and grow your brand online."
                 gradient="from-cyan-500 via-blue-500 to-indigo-500"
                 backgroundImage="/banner-img/website_banner.jpg"
             />

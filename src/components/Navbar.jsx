@@ -86,7 +86,7 @@ const Navbar = () => {
               </button>
 
               {servicesOpen && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-72 bg-[#020510]/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl py-2 overflow-visible z-50 animate-in fade-in slide-in-from-top-2 duration-80">
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-72 bg-[#020510]/95 backdrop-blur-xl rounded-2xl shadow-2xl py-2 overflow-visible z-50 animate-in fade-in slide-in-from-top-2 duration-80">
                   <div className="px-1 space-y-0.5">
                     <NavLink to="/services/ecommerce" onClick={() => setServicesOpen(false)} className={({ isActive }) => `block px-4 py-2.5 text-sm rounded-lg transition-all ${isActive ? '!text-[#2BFFFF] bg-white/5' : '!text-gray-300 hover:!text-white hover:bg-white/5'}`}>E-commerce Website Development</NavLink>
                     <NavLink to="/services/website" onClick={() => setServicesOpen(false)} className={({ isActive }) => `block px-4 py-2.5 text-sm rounded-lg transition-all ${isActive ? '!text-[#2BFFFF] bg-white/5' : '!text-gray-300 hover:!text-white hover:bg-white/5'}`}>Website Design and Development</NavLink>
@@ -125,7 +125,7 @@ const Navbar = () => {
               </button>
 
               {productsOpen && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 pt-2 w-48 bg-[#020510]/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-80">
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 pt-2 w-48 bg-[#020510]/95 backdrop-blur-xl rounded-2xl shadow-2xl py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-80">
                   <Link to="/products/fieldeaze" onClick={() => setProductsOpen(false)} className="block px-4 py-2.5 text-sm !text-gray-300 hover:!text-white hover:bg-white/5 rounded-lg transition-all">FieldEaze</Link>
                 </div>
               )}
@@ -185,7 +185,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {
         isOpen && (
-          <div className="lg:hidden fixed top-28 left-1/2 transform -translate-x-1/2 w-[90%] max-w-md bg-black/95 backdrop-blur-2xl border border-white/20 rounded-3xl shadow-2xl overflow-hidden mt-2 animate-in fade-in slide-in-from-top-2 duration-80">
+          <div className="lg:hidden fixed top-28 left-1/2 transform -translate-x-1/2 w-[90%] max-w-md bg-black/95 backdrop-blur-2xl border border-white/20 rounded-3xl shadow-2xl overflow-y-auto max-h-[85vh] mt-2 animate-in fade-in slide-in-from-top-2 duration-80 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-white/20 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:hover:bg-white/40">
             <div className="px-4 pt-6 pb-6 space-y-1">
               <NavLink
                 to="/"
@@ -282,7 +282,7 @@ const Navbar = () => {
 
               <div className="pt-4 border-t border-white mt-4">
                 <Link
-                  to="/signin"
+                  to="/contact"
                   onClick={() => setIsOpen(false)}
                   className="block w-full text-center bg-gradient-to-r from-[#2BFFFF] to-teal-500 !text-white px-6 py-3.5 rounded-full font-semibold shadow-lg shadow-purple-500/30 hover:scale-105 transition-all duration-300"
                 >

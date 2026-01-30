@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
 import Button from "./Button";
 import emailjs from "@emailjs/browser";
 
@@ -14,6 +15,7 @@ const ContactUs = () => {
 
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -62,7 +64,6 @@ const ContactUs = () => {
         "QBX0tqPoQTYBdTbO8"    // 🔴 replace
       );
 
-      alert("Thank you! Your message has been sent.");
       setFormData({
         name: "",
         email: "",
@@ -70,6 +71,8 @@ const ContactUs = () => {
         interest: "",
         message: ""
       });
+      setShowSuccess(true);
+      setTimeout(() => setShowSuccess(false), 5000);
     } catch (err) {
       console.error(err);
       alert("Oops! Something went wrong. Please try again.");
@@ -79,31 +82,98 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="pt-30 pb-10 min-h-screen bg-[#0B1121] font-sans px-4 md:px-10 flex items-center justify-center">
-      <div className="w-full max-w-6xl bg-white/5 backdrop-blur-3xl rounded-3xl border border-white/10 overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+    <div className="pt-28 pb-20 min-h-screen bg-[#0B1121] font-sans relative overflow-hidden flex flex-col items-center justify-center">
+
+      {/* BACKGROUND ANIMATIONS - LIQUID GLOSS */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+        {/* Blob 1 - Cyan/Blue Mix */}
+        <motion.div
+          animate={{
+            x: [0, 100, -50, 0],
+            y: [0, -100, 50, 0],
+            scale: [1, 1.2, 0.9, 1],
+            rotate: [0, 45, -45, 0]
+          }}
+          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-[#3981d4]/30 rounded-full blur-[100px] mix-blend-screen opacity-60"
+        />
+
+        {/* Blob 2 - Electric Cyan */}
+        <motion.div
+          animate={{
+            x: [0, -100, 50, 0],
+            y: [0, 100, -50, 0],
+            scale: [1, 1.3, 0.8, 1],
+            rotate: [0, -30, 30, 0]
+          }}
+          transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute bottom-[-10%] right-[-10%] w-[700px] h-[700px] bg-[#2BFFFF]/20 rounded-full blur-[120px] mix-blend-screen opacity-50"
+        />
+
+        {/* Blob 3 - Deep Purple/Blue Accent (Center-ish) */}
+        <motion.div
+          animate={{
+            x: [0, 50, -50, 0],
+            y: [0, -50, 50, 0],
+            scale: [1, 1.1, 0.9, 1],
+            opacity: [0.3, 0.5, 0.3]
+          }}
+          transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#4c1d95]/20 rounded-full blur-[150px] mix-blend-overlay"
+        />
+
+        {/* Glassy Overlay for sheen */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-20 pointer-events-none"></div>
+      </div>
+
+      {/* PAGE HEADER */}
+      <div className="relative z-10 text-center mb-8 md:mb-12 px-4">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-3 md:mb-4"
+        >
+          Get in <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2BFFFF] to-[#3981d4]">Touch</span>
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+          className="text-gray-400 text-sm md:text-lg max-w-2xl mx-auto px-4 leading-relaxed"
+        >
+          Have a project in mind? We'd love to hear from you. Let's create something amazing together.
+        </motion.p>
+      </div>
+
+      <div className="w-full max-w-6xl bg-white/5 backdrop-blur-3xl rounded-3xl border border-white/10 overflow-hidden shadow-2xl flex flex-col lg:flex-row relative z-10 mx-4 my-4">
 
         {/* LEFT PANEL */}
-        <div className="relative w-full lg:w-2/5 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] p-10 flex flex-col justify-between overflow-hidden">
+        <div className="relative w-full lg:w-2/5 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] p-6 md:p-10 flex flex-col justify-between overflow-hidden">
+          {/* Functional Decorative Circles */}
+          <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-[#2BFFFF]/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div className="absolute top-10 right-10 w-20 h-20 bg-[#3981d4]/20 rounded-full blur-xl pointer-events-none"></div>
+
           <div>
-            <h2 className="text-3xl font-bold text-white mb-4">Contact Information</h2>
-            <p className="text-gray-400 text-sm leading-relaxed mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Contact Information</h2>
+            <p className="text-gray-400 text-sm leading-relaxed mb-8 md:mb-12">
               Fill up the form and our Team will get back to you within 24 hours.
             </p>
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
               <div className="flex items-center gap-4 !text-white group">
-                <div className="w-10 h-10 rounded-full bg-[#2BFFFF]/10 flex items-center justify-center text-[#2BFFFF]">
+                <div className="w-10 h-10 rounded-full bg-[#2BFFFF]/10 flex items-center justify-center text-[#2BFFFF] group-hover:bg-[#2BFFFF] group-hover:text-black transition-all duration-300 shrink-0">
                   <FaPhoneAlt className="text-sm" />
                 </div>
                 <a href="tel:+918870659648" className="text-sm font-medium hover:text-[#2BFFFF] transition-colors !text-white">+91 8870659648</a>
               </div>
               <div className="flex items-center gap-4 text-white group">
-                <div className="w-10 h-10 rounded-full bg-[#2BFFFF]/10 flex items-center justify-center text-[#2BFFFF]">
+                <div className="w-10 h-10 rounded-full bg-[#2BFFFF]/10 flex items-center justify-center text-[#2BFFFF] group-hover:bg-[#2BFFFF] group-hover:text-black transition-all duration-300 shrink-0">
                   <FaEnvelope className="text-sm" />
                 </div>
-                <a href="mailto:info@stellarsolutions.org" className="text-sm font-medium hover:text-[#2BFFFF] transition-colors !text-white">info@stellarsolutions.org</a>
+                <a href="mailto:info@stellarsolutions.org" className="text-sm font-medium hover:text-[#2BFFFF] transition-colors !text-white break-all">info@stellarsolutions.org</a>
               </div>
               <div className="flex items-start gap-4 text-white group">
-                <div className="w-10 h-10 rounded-full bg-[#2BFFFF]/10 flex items-center justify-center text-[#2BFFFF] shrink-0">
+                <div className="w-10 h-10 rounded-full bg-[#2BFFFF]/10 flex items-center justify-center text-[#2BFFFF] shrink-0 group-hover:bg-[#2BFFFF] group-hover:text-black transition-all duration-300">
                   <FaMapMarkerAlt className="text-sm" />
                 </div>
                 <p className="text-sm text-gray-300 leading-relaxed">
@@ -111,6 +181,21 @@ const ContactUs = () => {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* Map Placeholder */}
+          <div className="mt-8 md:mt-12 relative h-40 w-full rounded-2xl overflow-hidden border border-white/10 opacity-80 hover:opacity-100 transition-opacity">
+            <iframe
+              title="Stellar Solutions Map Location"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              scrolling="no"
+              marginHeight="0"
+              marginWidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Stellar%20Solutions,%20Saravanampatti,%20Coimbatore+(Stellar%20Solutions)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              className="filter transition-all duration-500"
+            ></iframe>
           </div>
         </div>
 
@@ -201,6 +286,24 @@ const ContactUs = () => {
           </form>
         </div>
       </div>
+
+      {/* SUCCESS POPUP */}
+      <AnimatePresence>
+        {showSuccess && (
+          <motion.div
+            initial={{ opacity: 0, y: -50, x: "-50%" }}
+            animate={{ opacity: 1, y: 0, x: "-50%" }}
+            exit={{ opacity: 0, y: -50, x: "-50%" }}
+            transition={{ type: "spring", stiffness: 300, damping: 25 }}
+            className="fixed top-24 left-1/2 transform -translate-x-1/2 z-50 bg-[#2BFFFF]/10 backdrop-blur-md border border-[#2BFFFF]/50 text-[#2BFFFF] px-8 py-4 rounded-2xl shadow-[0_0_20px_rgba(43,255,255,0.3)] flex items-center gap-3"
+          >
+            <div className="w-6 h-6 rounded-full bg-[#2BFFFF] flex items-center justify-center text-black font-bold text-xs">
+              ✓
+            </div>
+            <span className="font-semibold tracking-wide">Message sent successfully! We'll get back to you shortly.</span>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

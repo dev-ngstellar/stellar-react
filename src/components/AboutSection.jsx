@@ -30,7 +30,7 @@ const AboutSection = () => {
 
           {/* RIGHT – CONTENT */}
           <div className="w-full md:w-1/2 space-y-6 lg:space-y-8">
-            <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold font-inter ">
+            <h2 className="text-4xl md:text-5xl lg:text-5xl pb-2 font-bold font-inter ">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2BFFFF] via-blue-400 to-[#3981d4]">About Us</span>
 
             </h2>
@@ -53,7 +53,7 @@ const AboutSection = () => {
                 </div>
               ))}
             </div>
-
+ 
             <p className="text-gray-400 text-[16px] leading-relaxed font-inter">
               Our mission is to simplify digital transformation through innovative, secure, and user-friendly technology.
             </p>

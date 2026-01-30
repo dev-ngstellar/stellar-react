@@ -103,7 +103,7 @@ const BlogPostTemplate = ({
                 </motion.div>
 
                 {/* Share/Footer */}
-                <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center">
+                {/* <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center">
                     <h3 className="text-xl font-bold text-white">Share this article</h3>
                     <div className="flex gap-4">
                         {['twitter', 'facebook', 'linkedin', 'link'].map((social) => (
@@ -112,7 +112,7 @@ const BlogPostTemplate = ({
                             </button>
                         ))}
                     </div>
-                </div>
+                </div> */}
             </div>
         </article>
     );

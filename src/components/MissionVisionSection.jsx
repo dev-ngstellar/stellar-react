@@ -23,7 +23,7 @@ const MissionVisionSection = () => {
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-blue-600/20 blur-[80px] md:blur-[100px] rounded-full"></div>
 
                     {/* Image 1 (Back/Left) */}
-                    <div className="absolute top-4 left-4 sm:top-10 sm:left-0 w-[45%] sm:w-[55%] h-[70%] sm:h-[75%] rounded-2xl overflow-hidden border border-white/10 shadow-2xl transform -rotate-6 grayscale hover:grayscale-0 transition-all duration-500 hover:z-20 hover:scale-105">
+                    <div className="absolute top-4 left-4 sm:top-10 sm:left-0 w-[45%] sm:w-[55%] h-[70%] sm:h-[75%] rounded-2xl overflow-hidden border border-white/10 shadow-2xl transform -rotate-6 transition-all duration-500 hover:z-20 hover:scale-105">
                         <img
                             src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop"
                             alt="Team collaboration"
@@ -59,13 +59,13 @@ const MissionVisionSection = () => {
                         <span className="text-xl text-[#2BFFFF] animate-pulse">❖</span>
                         <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#2BFFFF] via-blue-400 to-[#3981d4]">Mission & Vision</span>
                     </div>
-
+ 
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                         Navigating the <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2BFFFF] via-blue-400 to-[#3981d4]">Digital Landscape with Expertise</span>
                     </h2>
 
-                    <p className="text-gray-400 text-base md:text-lg mb-12 leading-relaxed">
+                    <p className="text-gray-400 mb-12 text-[16px] leading-relaxed font-inter">
                         Through our unwavering commitment to our mission and vision, we aim to become a trusted partner for organizations seeking innovative software solutions that drive growth, efficiency, and success.
                     </p>
 
@@ -74,7 +74,7 @@ const MissionVisionSection = () => {
                         {/* Mission */}
                         <div className="group p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500/30 transition-all duration-300 hover:bg-white/10">
                             <h3 className="text-xl md:text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors">Our Mission</h3>
-                            <p className="text-sm text-gray-400 leading-relaxed">
+                            <p className="text-gray-400 text-[14px] leading-relaxed font-inter">
                                 Our mission is to bring ingenious and dependable software solutions that empower businesses and individuals to achieve their goals.
                             </p>
                         </div>
@@ -82,7 +82,7 @@ const MissionVisionSection = () => {
                         {/* Vision */}
                         <div className="group p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-purple-500/30 transition-all duration-300 hover:bg-white/10">
                             <h3 className="text-xl md:text-2xl font-bold text-white mb-4 group-hover:text-purple-400 transition-colors">Our Vision</h3>
-                            <p className="text-sm text-gray-400 leading-relaxed">
+                            <p className="text-gray-400 text-[14px] leading-relaxed font-inter">
                                 Our vision is to be the preferred software development partner globally, known for delivering exceptional results and exceeding client expectations.
                             </p>
                         </div>

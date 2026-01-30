@@ -16,8 +16,9 @@ const ChooseCard = ({ icon, title, description }) => (
             </div>
         </div>
 
-        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#2BFFFF] transition-colors duration-300">{title}</h3>
-        <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300 leading-relaxed text-sm">{description}</p>
+        <h3 className="text-center text-xl
+         font-bold text-white mb-3 group-hover:text-[#2BFFFF] transition-colors duration-300">{title}</h3>
+        <p className="text-center text-gray-400 group-hover:text-gray-300 transition-colors duration-300 leading-relaxed text-sm">{description}</p>
     </motion.div>
 );
 

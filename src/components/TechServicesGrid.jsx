@@ -56,7 +56,7 @@ const TechServicesGrid = ({ title, highlightText, description, services }) => {
                                         {service.title}
                                     </h3>
 
-                                    <p className="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
+                                    <p className="text-gray-400 text-[14px] leading-relaxed font-inter group-hover:text-gray-300 transition-colors duration-300">
                                         {service.description}
                                     </p>
                                 </div>

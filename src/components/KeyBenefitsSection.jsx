@@ -93,7 +93,7 @@ const KeyBenefitsSection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="text-gray-400 max-w-2xl mx-auto text-lg"
+                        className="text-gray-400 max-w-2xl mx-auto text-[16px] leading-relaxed font-inter"
                     >
                         Discover how our expert software engineering streamlines your operations through efficiency, security, and innovation.                  </motion.p>
                 </div>
@@ -130,7 +130,7 @@ const KeyBenefitsSection = () => {
                                 {item.title}
                             </h3>
 
-                            <p className="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors">
+                            <p className="text-gray-400 text-[14px] leading-relaxed font-inter group-hover:text-gray-300 transition-colors">
                                 {item.description}
                             </p>
                         </motion.div>

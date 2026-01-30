@@ -16,22 +16,24 @@ const About = () => {
                 description="We turn innovative ideas into powerful, real-world digital solutions."
                 backgroundImage="/banner-img/1.jpg"
             >
-                <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="px-8 py-3 rounded-full bg-gradient-to-r from-[#2BFFFF] to-teal-500 text-black shadow-lg  transition-all duration-300 text-xs font-bold tracking-widest uppercase"
+                <Link to="/services/ecommerce">
+                    <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="px-8 py-3 rounded-full bg-gradient-to-r from-[#2BFFFF] to-teal-500 text-black shadow-lg  transition-all duration-300 text-xs font-bold tracking-widest uppercase inline-block"
+                    >
+                        Our Services
+                    </motion.div>
+                </Link>
+                <StarBorder
+                    as={Link}
+                    to="/contact"
+                    className="text-[#2BFFFF] font-bold tracking-widest uppercase text-sm"
+                    color="#2BFFFF"
+                    speed="3s"
                 >
-                    Our Services
-                </motion.button>
-                 <StarBorder
-              as={Link}
-              to="/contact"
-              className="text-[#2BFFFF] font-bold tracking-widest uppercase text-sm"
-              color="#2BFFFF"
-              speed="3s"
-            >
-              Get in Touch
-            </StarBorder>
+                    Get in Touch
+                </StarBorder>
             </BannerCommon>
             <CompanyOverview />
             <MissionVisionSection />

@@ -58,7 +58,7 @@ const WhyChooseUsSection = ({ title, items }) => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true, margin: "-100px" }}
                                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                                    className={`relative flex flex-col md:flex-row items-start md:items-center gap-8 ${isEven ? 'md:flex-row-reverse' : ''
+                                    className={`relative flex flex-col md:flex-row items-start md:items-start gap-8 ${isEven ? 'md:flex-row-reverse' : ''
                                         }`}
                                 >
                                     {/* Content Side */}
@@ -78,7 +78,7 @@ const WhyChooseUsSection = ({ title, items }) => {
                                     </div>
 
                                     {/* Center Node / Icon */}
-                                    <div className="absolute left-[20px] md:left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full border border-blue-500/30 bg-[#020510] shadow-[0_0_15px_rgba(59,130,246,0.5)] z-10 group mt-1 md:mt-0">
+                                    <div className="absolute left-[20px] md:left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full border border-blue-500/30 bg-[#020510] shadow-[0_0_15px_rgba(59,130,246,0.5)] z-10 group mt-6 md:mt-6">
                                         <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-md animate-pulse" />
                                         <div className="relative text-cyan-400 group-hover:scale-110 transition-transform duration-300">
                                             {getIcon(item.title)}

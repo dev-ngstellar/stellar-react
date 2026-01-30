@@ -5,7 +5,7 @@ import Button from './Button';
 
 const FieldEazeShowcase = () => {
     return (
-        <section className="relative py-24 px-6 bg-[#020813] overflow-hidden">
+        <section className="relative py-14 px-6 bg-[#020813] overflow-hidden">
             {/* Background Elements */}
             <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-purple-900/20 blur-[120px] rounded-full pointer-events-none" />
             <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-900/10 blur-[120px] rounded-full pointer-events-none" />

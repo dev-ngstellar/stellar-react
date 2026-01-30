@@ -160,7 +160,9 @@ const Navbar = () => {
         {/* 3. Right Actions (Enquire & Mobile Menu) */}
         <div className="flex items-center gap-4 relative z-20">
           <div className="hidden lg:block">
+            <Link to="/contact">
             <Button>Enquire Us</Button>
+            </Link>
 
           </div>
 

@@ -75,13 +75,10 @@ const StatsSection = () => {
           {/* Glossy Sheen */}
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
 
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0 relative z-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 items-center relative z-10">
             <StatItem number="20+" label={<>Years of <br /> Industry Experience</>} delay={0} />
-            <div className="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
             <StatItem number="100+" label={<>Projects Successfully <br /> Completed</>} delay={0.1} />
-            <div className="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
             <StatItem number="80+" label={<>Happy Clients <br /> around the World</>} delay={0.2} />
-            <div className="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
             <StatItem number="15+" label={<>Services are given on <br /> different Technologies</>} delay={0.3} />
           </div>
         </motion.div>

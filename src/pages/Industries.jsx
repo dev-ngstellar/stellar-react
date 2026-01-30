@@ -44,7 +44,7 @@ const Industries = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-6xl font-bold text-white tracking-tight"
+                    className="text-4xl md:text-6xl pb-2 font-bold text-white tracking-tight"
                 >
                     Industries We
                     <span className="relative inline-block ml-2">
@@ -68,7 +68,7 @@ const Industries = () => {
                                     whileInView={{ opacity: 1, scale: 1 }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.8 }}
-                                    className="w-full lg:w-[45%] flex-shrink-0 relative group p-[2px] overflow-hidden rounded-2xl shadow-[0_0_30px_-10px_rgba(43,255,255,0.4)]"
+                                    className="w-full lg:w-[40%] max-w-md flex-shrink-0 relative group p-[2px] overflow-hidden rounded-2xl shadow-[0_0_30px_-10px_rgba(43,255,255,0.4)]"
                                 >
                                     <motion.div
                                         className="absolute inset-[-150%] z-0"
@@ -124,12 +124,7 @@ const Industries = () => {
                                     {/* Description */}
                                     <div className="w-full max-w-lg">
                                         <p
-                                            className="text-gray-400 text-lg leading-relaxed mb-4 line-clamp-3"
-                                            style={{
-                                                textAlign: 'justify',
-                                                textJustify: 'inter-word',
-                                                textAlignLast: isEven ? 'left' : 'right'
-                                            }}
+                                            className="text-gray-400 text-lg leading-relaxed mb-4 line-clamp-3 text-justify"
                                         >
                                             {truncateDescription(item.description)}
                                         </p>

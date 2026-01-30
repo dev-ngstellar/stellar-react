@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
             <div className="max-w-4xl mx-auto space-y-8">
                 {/* Header */}
                 <div className="border-b border-gray-800 pb-8">
-                    <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 mb-4">
+                    <h1 className="text-4xl md:text-5xl pb-2 font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 mb-4">
                         Privacy Policy
                     </h1>
                     <p className="text-sm text-gray-400">Last updated: September 14, 2024</p>

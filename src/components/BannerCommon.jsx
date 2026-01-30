@@ -13,7 +13,7 @@ const BannerCommon = ({
     children
 }) => {
     return (
-        <div className={`relative flex flex-col items-center justify-center py-24 px-4 overflow-hidden bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#12071f] via-[#030014] to-black ${className}`}>
+        <div className={`relative flex flex-col items-center justify-center py-24 px-4 overflow-hidden bg-[#030014] ${className}`}>
             {/* Optional Background Image or Video */}
             {backgroundVideo ? (
                 <div className="absolute inset-0 z-0">
@@ -35,7 +35,7 @@ const BannerCommon = ({
                         alt="Banner Background"
                         className="w-full h-full object-cover opacity-90"
                     />
-                    <div className="absolute inset-0 bg-black/70" />
+                    <div className="absolute inset-0 bg-black/40" />
                 </div>
             )}
 

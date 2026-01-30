@@ -7,7 +7,7 @@ const CompanyOverview = () => {
         <section className="relative py-24 px-4 bg-[#0a0a0a] overflow-hidden">
             {/* Dynamic Background Effects */}
             <div className="absolute inset-0 w-full h-full">
-                <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-600/20 blur-[100px] rounded-full mix-blend-screen animate-blob" />
+                <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-[#2BFFFF]/20 blur-[100px] rounded-full mix-blend-screen animate-blob" />
                 <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-blue-600/20 blur-[100px] rounded-full mix-blend-screen animate-blob animation-delay-2000" />
                 <div className="absolute top-[40%] left-[40%] w-[600px] h-[600px] bg-cyan-500/10 blur-[120px] rounded-full mix-blend-screen animate-pulse" />
             </div>
@@ -33,7 +33,7 @@ const CompanyOverview = () => {
 
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] text-white tracking-tight mb-8">
                         Delivering <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2BFFFF] via-blue-400 to-purple-400">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2BFFFF] to-teal-500">
                             Digital Excellence
                         </span>
                         <br /> Since 2018.

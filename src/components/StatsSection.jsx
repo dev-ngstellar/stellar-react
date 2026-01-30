@@ -70,7 +70,7 @@ const StatsSection = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-white/5 backdrop-blur-xl rounded-[2.5rem] p-12 border border-white/10 shadow-2xl relative overflow-hidden"
+          className="bg-white/5 backdrop-blur-xl rounded-[2.5rem] p-8 border border-white/10 shadow-2xl relative overflow-hidden"
         >
           {/* Glossy Sheen */}
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>

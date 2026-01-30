@@ -27,8 +27,8 @@ const Navbar = () => {
   }, [scrolled]);
 
   return (
-    <nav className={`fixed w-full z-50 top-0 transition-all duration-300 ${scrolled ? 'bg-[#020510]/80 backdrop-blur-lg border-b border-white/5' : 'py-6 bg-transparent'}`}>
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between">
+    <nav className={`fixed w-full z-50 top-0 transition-all duration-300 ${scrolled ? 'bg-[#020510]/80 backdrop-blur-lg border-b border-white/5' : 'py-2 bg-transparent'}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
 
         {/* 1. Logo (Left) */}
         <NavLink to="/" className="flex-shrink-0 relative z-20">
@@ -86,7 +86,7 @@ const Navbar = () => {
               </button>
 
               {servicesOpen && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-72 bg-[#020510]/95 backdrop-blur-xl rounded-2xl shadow-2xl py-2 overflow-visible z-50 animate-in fade-in slide-in-from-top-2 duration-80">
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-72 bg-[#020510] rounded-2xl shadow-2xl py-2 overflow-visible z-50 animate-in fade-in slide-in-from-top-2 duration-80">
                   <div className="px-1 space-y-0.5">
                     <NavLink to="/services/ecommerce" onClick={() => setServicesOpen(false)} className={({ isActive }) => `block px-4 py-2.5 text-sm rounded-lg transition-all ${isActive ? '!text-[#2BFFFF] bg-white/5' : '!text-gray-300 hover:!text-white hover:bg-white/5'}`}>E-commerce Website Development</NavLink>
                     <NavLink to="/services/website" onClick={() => setServicesOpen(false)} className={({ isActive }) => `block px-4 py-2.5 text-sm rounded-lg transition-all ${isActive ? '!text-[#2BFFFF] bg-white/5' : '!text-gray-300 hover:!text-white hover:bg-white/5'}`}>Website Design and Development</NavLink>
@@ -125,7 +125,7 @@ const Navbar = () => {
               </button>
 
               {productsOpen && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 pt-2 w-48 bg-[#020510]/95 backdrop-blur-xl rounded-2xl shadow-2xl py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-80">
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 pt-2 w-48 bg-[#020510] rounded-2xl shadow-2xl py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-80">
                   <Link to="/products/fieldeaze" onClick={() => setProductsOpen(false)} className="block px-4 py-2.5 text-sm !text-gray-300 hover:!text-white hover:bg-white/5 rounded-lg transition-all">FieldEaze</Link>
                 </div>
               )}
@@ -161,7 +161,7 @@ const Navbar = () => {
         <div className="flex items-center gap-4 relative z-20">
           <div className="hidden lg:block">
             <Link to="/contact">
-            <Button>Enquire Us</Button>
+              <Button>Enquire Us</Button>
             </Link>
 
           </div>

@@ -6,7 +6,7 @@ import StarBorder from './StarBorder';
 
 const HeroSection = () => {
   return (
-    <section className="pt-24 relative w-full min-h-screen bg-[#0a0b1a] font-sans overflow-hidden flex items-center">
+    <section className="pt-24 relative w-full min-h-[100dvh] bg-[#0a0b1a] font-sans overflow-hidden flex items-center">
 
       {/* Background Floating Lines */}
       <div className="absolute inset-0 z-0">
@@ -25,7 +25,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main Content Container */}
-      <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col items-center justify-center min-h-[calc(100vh-6rem)] text-center">
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col items-center justify-center min-h-[calc(100vh-6rem)] text-center">
 
         {/* Main Content */}
         <div className="flex flex-col justify-center items-center text-center space-y-6 lg:space-y-8 max-w-5xl mx-auto">

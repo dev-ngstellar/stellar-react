@@ -14,9 +14,12 @@ import cl12 from '../assets/cl-12.jpg';
 import cl13 from '../assets/cl-13.jpg';
 import cl14 from '../assets/cl-14.jpg';
 import cl15 from '../assets/cl-15.jpg';
+import cl16 from '../assets/cl-16.png';
+import cl17 from '../assets/cl-17.png';
+import cl18 from '../assets/cl-18.png';
 
 const ClientsSection = () => {
-  const clients = [cl1, cl2, cl3, cl4, cl5, cl6, cl7, cl8, cl9, cl10,cl11,cl12,cl13,cl14,cl15];
+  const clients = [cl1, cl2, cl3, cl4, cl5, cl6, cl7, cl8, cl9, cl10,cl11,cl12,cl13,cl14,cl15,cl16,cl17,cl18];
 
   return (
     <section className="py-12 bg-gray-50 border-t border-gray-200">

@@ -19,11 +19,14 @@ import AIRevolutionizeBlog from './pages/AIRevolutionizeBlog';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
+import FloatingWhatsApp from './components/FloatingWhatsApp';
+
 function App() {
   return (
     <>
       <ScrollToTop />
       <Navbar />
+      <FloatingWhatsApp />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

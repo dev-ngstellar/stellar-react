@@ -41,11 +41,11 @@ const OneSolutionERPTargetUsers = ({ targetUsers }) => {
                     <div className="flex justify-center mt-8 md:mt-12">
                         <div className="relative w-full">
                             {/* Position cards 4 and 5 in the gaps between cards 1-2 and 2-3 */}
-                            <div className="grid grid-cols-2 gap-6 md:gap-8" 
-                                 style={{ 
-                                     width: 'calc(66.666% - 1rem)', // 2/3 of container minus gap
-                                     marginLeft: 'calc(16.666% + 0.5rem)' // Offset to align in gaps
-                                 }}>
+                            <div className="grid grid-cols-2 gap-6 md:gap-8"
+                                style={{
+                                    width: 'calc(66.666% - 1rem)', // 2/3 of container minus gap
+                                    marginLeft: 'calc(16.666% + 0.5rem)' // Offset to align in gaps
+                                }}>
                                 {lastTwo.map((item, index) => (
                                     <Card
                                         key={index + 3}
@@ -91,25 +91,22 @@ const OneSolutionERPTargetUsersClean = ({ targetUsers }) => {
 
                 <div className="max-w-6xl mx-auto">
                     {/* Row 1 */}
-                    <div className="flex justify-center gap-6 md:gap-8 mb-8 md:mb-12">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8 mb-6 md:mb-12">
                         {firstThree.map((item, index) => (
-                            <div key={index} className="w-full md:w-1/3">
-                                <Card item={item} delay={index * 0.1} />
-                            </div>
+                            <Card key={index} item={item} delay={index * 0.1} />
                         ))}
                     </div>
 
-                    {/* Row 2 - offset by half a card width */}
+                    {/* Row 2 - offset by half a card width on desktop */}
                     <div className="flex justify-center">
-                        <div className="relative" style={{ width: '66.666%' }}>
-                            <div className="flex gap-6 md:gap-8">
+                        <div className="w-full md:w-2/3">
+                            <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-8">
                                 {lastTwo.map((item, index) => (
-                                    <div key={index + 3} className="w-1/2">
-                                        <Card
-                                            item={item}
-                                            delay={(index + 3) * 0.1}
-                                        />
-                                    </div>
+                                    <Card
+                                        key={index + 3}
+                                        item={item}
+                                        delay={(index + 3) * 0.1}
+                                    />
                                 ))}
                             </div>
                         </div>
@@ -131,26 +128,43 @@ const Card = ({ item, delay }) => (
         className="group h-80 perspective-[1000px] cursor-pointer"
     >
         <div className="relative w-full h-full duration-700 transition-all [transform-style:preserve-3d] group-hover:[transform:rotateX(180deg)]">
-            {/* Front */}
-            <div className="absolute inset-0 [backface-visibility:hidden]">
-                <div className="h-full w-full bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-xl border border-slate-100 p-8 flex items-center justify-center text-center">
-                    <h3 className="text-xl font-bold text-gray-800 line-clamp-3">
+
+            {/* Front Face */}
+            <div className="absolute inset-0 w-full h-full [backface-visibility:hidden]">
+                <div className="h-full w-full bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-xl border border-slate-100 p-8 flex flex-col items-center justify-center relative overflow-hidden group-hover:shadow-2xl transition-shadow duration-300">
+
+                    {/* Subtle corner accents */}
+                    <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-blue-500/10 to-transparent rounded-bl-full" />
+                    <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-cyan-500/10 to-transparent rounded-tr-full" />
+
+                    <h3 className="text-xl font-bold text-gray-800 text-center leading-tight break-words w-full relative z-10">
                         {item.title}
                     </h3>
+                    <div className="h-1 my-5 w-24 bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto rounded-full opacity-70 relative z-10" />
                 </div>
             </div>
 
-            {/* Back */}
-            <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateX(180deg)]">
-                <div className="h-full w-full bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 rounded-2xl shadow-xl border border-blue-500/30 p-8 flex flex-col items-center justify-center text-center">
-                    <h4 className="text-xl font-bold text-sky-300 mb-3 line-clamp-2">
+            {/* Back Face */}
+            <div className="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateX(180deg)]">
+                <div className="h-full w-full bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 rounded-2xl shadow-xl border border-blue-500/30 p-8 flex flex-col items-center justify-center text-center relative overflow-hidden">
+
+                    {/* Glowing Mesh Effect */}
+                    <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />
+                    <div className="absolute -top-10 -right-10 w-40 h-40 bg-cyan-500 rounded-full blur-[60px] opacity-20" />
+                    <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-purple-500 rounded-full blur-[60px] opacity-20" />
+
+                    <h4 className="text-xl font-bold text-sky-300 mb-3 relative z-10 line-clamp-2">
                         {item.title}
                     </h4>
-                    <p className="text-gray-300 text-sm line-clamp-4">
+                    <p className="text-gray-300 leading-relaxed text-sm relative z-10 line-clamp-4">
                         {item.description}
                     </p>
+
+                    {/* Bottom Accent */}
+                    <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent" />
                 </div>
             </div>
+
         </div>
     </motion.div>
 );

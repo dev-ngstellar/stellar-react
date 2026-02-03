@@ -45,7 +45,7 @@ const FieldEazeAdvantages = () => {
                     viewport={{ once: true }}
                     className="mb-16 text-center"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400 mb-6">
+                    <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400 mb-6 ">
                         Advantages of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2BFFFF] to-blue-500 animate-gradient-x">
                             FieldEaze
                         </span>

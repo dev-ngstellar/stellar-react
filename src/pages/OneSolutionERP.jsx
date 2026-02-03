@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { X } from 'lucide-react';
 import BannerCommon from '../components/BannerCommon';
 import TechServicesGrid from '../components/TechServicesGrid';
 import OneSolutionERPFeatures from '../components/OneSolutionERPFeatures';
@@ -7,14 +8,15 @@ import OneSolutionERPIndustries from '../components/OneSolutionERPIndustries';
 import OneSolutionERPTargetUsers from '../components/OneSolutionERPTargetUsers';
 import StarBorder from '../components/StarBorder';
 import { Link } from 'react-router-dom';
-import { 
-  coreModules, 
-  keyFeaturesData, 
-  industriesServed, 
-  targetUsers 
+import {
+  coreModules,
+  keyFeaturesData,
+  industriesServed,
+  targetUsers
 } from '../data/OneSolutionERPData';
 
 const OneSolutionERP = () => {
+  const [isImageModalOpen, setIsImageModalOpen] = React.useState(false);
   const showcaseRef = React.useRef(null);
 
   useEffect(() => {
@@ -31,7 +33,7 @@ const OneSolutionERP = () => {
         badgeText="Products"
         title="SolutionOne ERP"
         description="A robust ERP software designed for engineering and manufacturing businesses. Streamline sales, purchase, production, inventory, finance, and compliance on a single integrated platform."
-        backgroundVideo="../banner-img/products-fieldeaze-hero.mp4" 
+        backgroundVideo="../banner-img/products-fieldeaze-hero.mp4"
       >
         {/* Visit Our Site button - Fixed with proper centering */}
         <motion.div
@@ -192,15 +194,16 @@ const OneSolutionERP = () => {
             <img
               src="/onesolutionerp/solution_one_ERP.webp"
               alt="Solution One ERP Dashboard"
-              className="relative w-full h-auto drop-shadow-2xl z-10 rounded-2xl"
+              className="relative w-full h-auto drop-shadow-2xl z-10 rounded-2xl cursor-pointer hover:scale-[1.01] transition-transform duration-300"
               style={{ maxHeight: '600px', objectFit: 'cover' }}
+              onClick={() => setIsImageModalOpen(true)}
             />
           </motion.div>
         </div>
       </section>
 
       {/* Key Features Section */}
-      <OneSolutionERPFeatures 
+      <OneSolutionERPFeatures
         title="Key Features & Benefits"
         description="Powerful features designed for manufacturing excellence"
         features={keyFeaturesData}
@@ -308,6 +311,39 @@ const OneSolutionERP = () => {
           </div>
         </div>
       </section>
+      {/* Image Modal */}
+      <AnimatePresence>
+        {isImageModalOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm"
+            onClick={() => setIsImageModalOpen(false)}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="relative max-w-7xl w-full max-h-[90vh] flex items-center justify-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setIsImageModalOpen(false)}
+                className="absolute -top-12 right-0 md:-right-12 z-50 p-2 text-white/70 hover:text-white transition-colors bg-white/10 rounded-full md:bg-transparent"
+                aria-label="Close modal"
+              >
+                <X size={24} className="md:w-8 md:h-8" />
+              </button>
+              <img
+                src="/onesolutionerp/solution_one_ERP.webp"
+                alt="Solution One ERP Dashboard Full View"
+                className="w-full h-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

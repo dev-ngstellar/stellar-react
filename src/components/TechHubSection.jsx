@@ -24,7 +24,6 @@ const TechHubSection = ({ title, highlightText, items, centralIcon }) => {
                             {title} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500">{highlightText}</span>
                         </h2>
                         <div className="h-1 w-24 bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto rounded-full opacity-70" />
-
                     </motion.div>
                 )}
 
@@ -75,16 +74,16 @@ const TechHubSection = ({ title, highlightText, items, centralIcon }) => {
                                 >
                                     <div className={`p-8 rounded-2xl bg-gradient-to-br from-[#0f172a]/80 to-[#020617]/80 border border-white/5 hover:border-blue-500/30 transition-all duration-300 backdrop-blur-xl group-hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] md:max-w-md ${isLeft ? 'md:ml-auto' : 'md:mr-auto'}`}>
 
-                                        <div className={`mb-4 flex items-start gap-4 ${isLeft ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
-                                            <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20 group-hover:scale-110 transition-transform duration-300">
+                                        <div className={`mb-4 flex items-center gap-4 ${isLeft ? 'md:flex-row-reverse' : ''}`}>
+                                            <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20 group-hover:scale-110 transition-transform duration-300 shrink-0">
                                                 <item.icon className="w-6 h-6 text-blue-400" />
                                             </div>
-                                            <h3 className="text-xl font-bold text-white group-hover:text-blue-300 transition-colors">
+                                            <h3 className="text-xl font-bold text-white group-hover:text-blue-300 transition-colors flex-1">
                                                 {item.title}
                                             </h3>
                                         </div>
 
-                                        <p className="text-gray-400 text-[14px] leading-relaxed font-inter">
+                                        <p className={`text-gray-400 text-[14px] leading-relaxed font-inter ${isLeft ? 'md:text-right' : ''}`}>
                                             {item.description}
                                         </p>
                                     </div>

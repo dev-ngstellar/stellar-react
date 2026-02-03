@@ -52,7 +52,7 @@ const CustomSoftware = () => {
             <BannerCommon
                 badgeText="Services"
                 title="Custom Software Development Services That <br/> Drive Efficiency and Growth"
-                description="Custom Software Development Services That Drive Efficiency and Growth Tailored software solutions that streamline operations and boost productivity."
+                description="Tailored software solutions that streamline operations and boost productivity."
                 gradient="from-emerald-500 via-teal-500 to-cyan-500"
                 backgroundImage="/banner-img/custom-software_banner.jpg"
             />

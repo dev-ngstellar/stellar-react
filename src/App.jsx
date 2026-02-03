@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import FieldEaze from './pages/FieldEaze';
+import OneSolutionERP from './pages/OneSolutionERP';
 import Ecommerce from './pages/Ecommerce';
 import WebsiteDesign from './pages/WebsiteDesign';
 import MobileAppDev from './pages/MobileAppDev';
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products/fieldeaze" element={<FieldEaze />} />
+        <Route path="/products/onesolutionerp" element={<OneSolutionERP />} />
         <Route path="/services/ecommerce" element={<Ecommerce />} />
         <Route path="/services/website" element={<WebsiteDesign />} />
         <Route path="/services/mobile" element={<MobileAppDev />} />

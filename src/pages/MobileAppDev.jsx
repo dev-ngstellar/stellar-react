@@ -52,8 +52,7 @@ const MobileAppDev = () => {
             <BannerCommon
                 badgeText="Services"
                 title="Build Powerful Mobile Apps That <br /> Drive Business Growth"
-                description="Build Powerful Mobile Apps That Drive Business Growth
-Custom mobile apps built for performance, engagement, and scalability."
+                description="Custom mobile apps built for performance, engagement, and scalability."
                 gradient="from-pink-500 via-purple-500 to-indigo-500"
                 backgroundImage="/banner-img/mobile-app_banner.jpg"
             />

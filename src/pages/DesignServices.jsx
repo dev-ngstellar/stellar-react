@@ -51,7 +51,7 @@ const DesignServices = () => {
             <BannerCommon
                 badgeText="Services"
                 title="Creative Design Services That <br /> Elevate Your Brand"
-                description="Creative Design Services That Elevate Your Brand Impactful designs that strengthen brand identity and captivate audiences."
+                description="Impactful designs that strengthen brand identity and captivate audiences."
                 gradient="from-purple-500 via-pink-500 to-red-500"
                 backgroundImage="/banner-img/design_banner.jpg"
             />

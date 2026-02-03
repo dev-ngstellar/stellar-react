@@ -90,7 +90,7 @@ const BannerCommon = ({
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                className="relative z-10 text-5xl md:text-7xl lg:text-8xl font-bold text-center mb-8 pb-4 tracking-tighter leading-tight select-none bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-white/40 drop-shadow-2xl"
+                className="relative z-10 text-5xl md:text-7xl lg:text-8xl px-1 font-bold text-center mb-8 pb-4 tracking-tighter leading-tight select-none bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-white/40 drop-shadow-2xl"
                 dangerouslySetInnerHTML={{ __html: title }}
             />
 

@@ -18,7 +18,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-12">
           {/* Brand Column */}
           <div className="space-y-6">
-            <img src="/home/Stellar_logo.png" alt="Stellar Solutions" className="h-20 w-auto mb-4" />
+            <img
+              src="/home/Stellar-2_white.png"
+              alt="Stellar Logo"
+              className="h-20 w-auto brightness-0 invert transition-transform group-hover:scale-105"
+            />
             <p className="text-sm leading-relaxed text-gray-400">
               We leverage cutting-edge technologies to ensure your digital footprint
               stands out in the crowded online landscape.

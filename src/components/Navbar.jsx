@@ -27,16 +27,16 @@ const Navbar = () => {
   }, [scrolled]);
 
   return (
-    <nav className={`fixed w-full z-50 top-0 transition-all duration-300 ${scrolled ? 'bg-[#020510]/80 backdrop-blur-lg border-b border-white/5' : 'py-2 bg-transparent'}`}>
+    <nav className={`fixed w-full z-50 top-0 transition-all duration-300 py-3 ${scrolled ? 'bg-[#020510]/80 backdrop-blur-lg border-b border-white/5' : 'py-2 bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
 
         {/* 1. Logo (Left) */}
         <NavLink to="/" className="flex-shrink-0 relative z-20">
           <div className="flex items-center gap-2 group">
             <img
-              src="/home/Stellar_logo.png"
+              src="/home/Stellar-2_white.png"
               alt="Stellar Logo"
-              className="h-20 w-auto brightness-0 invert transition-transform group-hover:scale-105"
+              className="h-15 w-auto brightness-0 invert transition-transform group-hover:scale-105"
             />
           </div>
         </NavLink>
@@ -127,7 +127,7 @@ const Navbar = () => {
               {productsOpen && (
                 <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 pt-2 w-48 bg-[#020510] rounded-2xl shadow-2xl py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-80">
                   <NavLink to="/products/fieldeaze" onClick={() => setProductsOpen(false)} className={({ isActive }) => `block px-4 py-2.5 text-sm rounded-lg transition-all ${isActive ? '!text-[#2BFFFF] bg-white/5' : '!text-gray-300 hover:!text-white hover:bg-white/5'}`}>FieldEaze</NavLink>
-                  <NavLink to="/products/onesolutionerp" onClick={() => setProductsOpen(false)} className={({ isActive }) => `block px-4 py-2.5 text-sm rounded-lg transition-all ${isActive ? '!text-[#2BFFFF] bg-white/5' : '!text-gray-300 hover:!text-white hover:bg-white/5'}`}>One Solution ERP</NavLink>
+                  <NavLink to="/products/onesolutionerp" onClick={() => setProductsOpen(false)} className={({ isActive }) => `block px-4 py-2.5 text-sm rounded-lg transition-all ${isActive ? '!text-[#2BFFFF] bg-white/5' : '!text-gray-300 hover:!text-white hover:bg-white/5'}`}>Solution One ERP</NavLink>
                 </div>
               )}
             </div>
@@ -258,7 +258,7 @@ const Navbar = () => {
                       FieldEaze
                     </NavLink>
                     <NavLink to="/products/onesolutionerp" onClick={() => setIsOpen(false)} className={({ isActive }) => `block px-4 py-2.5 text-sm rounded-lg transition-all ${isActive ? '!text-[#2BFFFF]' : '!text-gray-300 hover:!text-[#2BFFFF] hover:bg-white/10'}`}>
-                      One Solution ERP
+                     SolutionOne ERP
                     </NavLink>
                   </div>
                 )}

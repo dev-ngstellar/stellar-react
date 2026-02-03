@@ -52,7 +52,7 @@ const DigitalMarketing = () => {
             <BannerCommon
                 badgeText="Services"
                 title="Elevate Your Online Visibility with Result-Driven <br/> Digital Marketing Services"
-                description="Elevate Your Online Visibility with Result-Driven Digital Marketing Services SEO, PPC, and marketing strategies that drive traffic, leads, and conversions."
+                description="SEO, PPC, and marketing strategies that drive traffic, leads, and conversions."
                 gradient="from-orange-500 via-red-500 to-pink-500"
                 backgroundImage="/banner-img/digital_banner.jpg"
             />

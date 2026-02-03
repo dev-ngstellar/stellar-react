@@ -52,8 +52,7 @@ const WebsiteDesign = () => {
             <BannerCommon
                 badgeText="Services"
                 title="Take Your Online Presence to New Heights with the <br /> Magic of Website Development"
-                description="Take Your Online Presence to New Heights with the Magic of Website Development
-Fast, responsive websites that engage users and grow your brand online."
+                description="Fast, responsive websites that engage users and grow your brand online."
                 gradient="from-cyan-500 via-blue-500 to-indigo-500"
                 backgroundImage="/banner-img/website_banner.jpg"
             />

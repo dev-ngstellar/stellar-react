@@ -762,7 +762,7 @@ const ServicesSection = () => {
                             className="text-lg md:text-xl font-medium"
                           >
                             {service.title}
-                            {index === 2 && '.'}
+
                           </motion.span>
                         </div>
                         {/* Navigation arrows (visible on hover) */}

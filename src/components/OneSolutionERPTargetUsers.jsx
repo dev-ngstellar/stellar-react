@@ -90,24 +90,34 @@ const OneSolutionERPTargetUsersClean = ({ targetUsers }) => {
                 </motion.div>
 
                 <div className="max-w-6xl mx-auto">
-                    {/* Row 1 */}
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8 mb-6 md:mb-12">
-                        {firstThree.map((item, index) => (
+                    {/* Mobile View: Unified Grid */}
+                    <div className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        {targetUsers.slice(0, 5).map((item, index) => (
                             <Card key={index} item={item} delay={index * 0.1} />
                         ))}
                     </div>
 
-                    {/* Row 2 - offset by half a card width on desktop */}
-                    <div className="flex justify-center">
-                        <div className="w-full md:w-2/3">
-                            <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-8">
-                                {lastTwo.map((item, index) => (
-                                    <Card
-                                        key={index + 3}
-                                        item={item}
-                                        delay={(index + 3) * 0.1}
-                                    />
-                                ))}
+                    {/* Desktop View: Split Layout */}
+                    <div className="hidden md:block">
+                        {/* Row 1 */}
+                        <div className="grid grid-cols-3 gap-8 mb-12">
+                            {firstThree.map((item, index) => (
+                                <Card key={index} item={item} delay={index * 0.1} />
+                            ))}
+                        </div>
+
+                        {/* Row 2 - offset by half a card width on desktop */}
+                        <div className="flex justify-center">
+                            <div className="w-2/3">
+                                <div className="grid grid-cols-2 gap-8">
+                                    {lastTwo.map((item, index) => (
+                                        <Card
+                                            key={index + 3}
+                                            item={item}
+                                            delay={(index + 3) * 0.1}
+                                        />
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

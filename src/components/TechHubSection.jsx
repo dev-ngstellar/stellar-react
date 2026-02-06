@@ -37,7 +37,7 @@ const TechHubSection = ({ title, highlightText, items, centralIcon }) => {
                             <div className="w-32 h-32 rounded-full bg-gradient-to-b from-[#0f172a] to-[#020617] border border-blue-500/30 flex items-center justify-center shadow-[0_0_30px_rgba(59,130,246,0.3)] relative z-10">
                                 {/* Central Logo/Icon */}
                                 {centralIcon ? centralIcon : (
-                                    <img src="/home/Stellar_logo.png" alt="Stellar" className="w-20 h-auto brightness-0 invert opacity-90" />
+                                    <img src="/home/Stellar_logo.png" alt="Stellar" loading="lazy" className="w-20 h-auto brightness-0 invert opacity-90" />
                                 )}
                             </div>
 

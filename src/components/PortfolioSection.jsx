@@ -16,6 +16,7 @@ const PortfolioItem = ({ title, image, category, delay, link }) => (
             <img
                 src={image}
                 alt={title}
+                loading="lazy"
                 className="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#020813] via-[#020813]/60 to-transparent opacity-90 transition-opacity duration-300 flex flex-col justify-end p-8 z-20">

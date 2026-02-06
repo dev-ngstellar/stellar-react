@@ -77,7 +77,7 @@ const Industries = () => {
                                         transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
                                     />
                                     <div className="relative z-10 aspect-square overflow-hidden rounded-2xl bg-[#020813]">
-                                        <img src={item.image} alt={item.name} className="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 ease-out" />
+                                        <img src={item.image} alt={item.name} loading="lazy" className="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 ease-out" />
                                         <div className="absolute inset-0 bg-gradient-to-t from-[#020813]/80 via-transparent to-transparent" />
                                     </div>
                                 </motion.div>

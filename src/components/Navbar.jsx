@@ -34,8 +34,9 @@ const Navbar = () => {
         <NavLink to="/" className="flex-shrink-0 relative z-20">
           <div className="flex items-center gap-2 group">
             <img
-              src="/home/Stellar-2_white.png"
+              src="/home/Stellar_logo.png"
               alt="Stellar Logo"
+              loading="lazy"
               className="h-15 w-auto brightness-0 invert transition-transform group-hover:scale-105"
             />
           </div>
@@ -48,7 +49,7 @@ const Navbar = () => {
             <NavLink
               to="/"
               end
-              className={({ isActive }) => `text-sm font-medium relative group transition-all whitespace-nowrap ${isActive ? '!text-[#2BFFFF]' : '!text-white/80 hover:!text-white'}`}
+              className={({ isActive }) => `text-sm fon"um relative group transition-all whitespace-nowrap ${isActive ? '!text-[#2BFFFF]' : '!text-white/80 hover:!text-white'}`}
             >
               Home
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#2BFFFF] group-hover:w-full transition-all duration-300"></span>

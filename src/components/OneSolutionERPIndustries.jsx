@@ -37,6 +37,7 @@ const OneSolutionERPIndustries = () => {
     <img
       src="/onesolutionerp/one.png"
       alt="Solution One ERP Logo"
+      loading="lazy"
       className="w-20 h-auto brightness-0 invert opacity-90"
     />
   );

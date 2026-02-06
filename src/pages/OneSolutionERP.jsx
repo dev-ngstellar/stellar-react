@@ -122,6 +122,7 @@ const OneSolutionERP = () => {
               <motion.img
                 src="/onesolutionerp/solution_one_mobile_1.png"
                 alt="Solution One ERP Mobile Interface"
+                loading="lazy"
                 className="relative w-full max-w-md lg:max-w-lg drop-shadow-2xl z-10 rounded-2xl"
                 animate={{ y: [0, -20, 0] }}
                 transition={{
@@ -194,6 +195,7 @@ const OneSolutionERP = () => {
             <img
               src="/onesolutionerp/solution_one_ERP.webp"
               alt="Solution One ERP Dashboard"
+              loading="lazy"
               className="relative w-full h-auto drop-shadow-2xl z-10 rounded-2xl cursor-pointer hover:scale-[1.01] transition-transform duration-300"
               style={{ maxHeight: '600px', objectFit: 'cover' }}
               onClick={() => setIsImageModalOpen(true)}

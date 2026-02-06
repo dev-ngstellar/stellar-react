@@ -27,6 +27,7 @@ const MissionVisionSection = () => {
                         <img
                             src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop"
                             alt="Team collaboration"
+                            loading="lazy"
                             className="w-full h-full object-cover opacity-80"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60"></div>
@@ -37,6 +38,7 @@ const MissionVisionSection = () => {
                         <img
                             src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop"
                             alt="Digital innovation"
+                            loading="lazy"
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-transparent"></div>

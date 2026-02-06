@@ -19,8 +19,9 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-6">
             <img
-              src="/home/Stellar-2_white.png"
+              src="/home/Stellar_logo.png"
               alt="Stellar Logo"
+              loading="lazy"
               className="h-20 w-auto brightness-0 invert transition-transform group-hover:scale-105"
             />
             <p className="text-sm leading-relaxed text-gray-400">

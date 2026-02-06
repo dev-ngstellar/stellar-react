@@ -80,6 +80,7 @@ const BlogPostTemplate = ({
                     <img
                         src={image}
                         alt={title}
+                        loading="lazy"
                         className="relative w-full h-[400px] md:h-[500px] object-cover rounded-[2rem] shadow-2xl border border-white/10"
                     />
                 </motion.div>

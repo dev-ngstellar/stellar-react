@@ -11,9 +11,9 @@ import cl9 from '../assets/cl-9.png';
 import cl10 from '../assets/cl-10.png';
 import cl11 from '../assets/cl-11.png';
 import cl12 from '../assets/cl-12.jpg';
-import cl13 from '../assets/cl-13.jpg';
-import cl14 from '../assets/cl-14.jpg';
-import cl15 from '../assets/cl-15.jpg';
+import cl13 from '../assets/cl-13.png';
+import cl14 from '../assets/cl-14.png';
+import cl15 from '../assets/cl-15.png';
 import cl16 from '../assets/cl-16.png';
 import cl17 from '../assets/cl-17.png';
 import cl18 from '../assets/cl-18.png';
@@ -32,6 +32,7 @@ const ClientsSection = () => {
                 <img
                   src={logo}
                   alt={`Client ${index + 1}`}
+                  loading="lazy"
                   className="h-16 w-auto object-contain hover:scale-110 transition-transform duration-300"
                 />
               </div>

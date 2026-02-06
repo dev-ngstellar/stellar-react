@@ -31,8 +31,9 @@ const BannerCommon = ({
             ) : backgroundImage && (
                 <div className="absolute inset-0 z-0">
                     <img
-                        src={backgroundImage}   
+                        src={backgroundImage}
                         alt="Banner Background"
+                        loading="lazy"
                         className="w-full h-full object-cover opacity-90"
                     />
                     <div className="absolute inset-0 bg-black/40" />

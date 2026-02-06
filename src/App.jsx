@@ -3,8 +3,11 @@ import { Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import ScrollToTop from './components/ScrollToTop';
+import Home from './pages/Home';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
+import Footer from './components/Footer';
 
-const Home = lazy(() => import('./pages/Home'));
+// Lazy load secondary pages (not Home)
 const About = lazy(() => import('./pages/About'));
 const FieldEaze = lazy(() => import('./pages/FieldEaze'));
 const OneSolutionERP = lazy(() => import('./pages/OneSolutionERP'));
@@ -20,16 +23,41 @@ const AIRevolutionizeBlog = lazy(() => import('./pages/AIRevolutionizeBlog'));
 const TermsAndConditions = lazy(() => import('./pages/TermsAndConditions'));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const ContactUs = lazy(() => import('./components/ContactUs'));
-const Footer = lazy(() => import('./components/Footer'));
-const FloatingWhatsApp = lazy(() => import('./components/FloatingWhatsApp'));
+
+// Loading fallback component
+const LoadingFallback = () => (
+  <div style={{
+    height: '200px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '8px'
+  }}>
+    <div style={{
+      display: 'inline-block',
+      width: '12px',
+      height: '12px',
+      borderRadius: '50%',
+      backgroundColor: '#2BFFFF',
+      animation: 'pulse 1.5s ease-in-out infinite'
+    }} />
+    <span style={{ color: '#666', fontSize: '14px' }}>Loading page...</span>
+    <style>{`
+      @keyframes pulse {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+      }
+    `}</style>
+  </div>
+);
 
 function App() {
   return (
     <>
       <ScrollToTop />
       <Navbar />
-      <Suspense fallback={<div style={{height:200,display:'flex',alignItems:'center',justifyContent:'center'}}>Loading…</div>}>
-        <FloatingWhatsApp />
+      <FloatingWhatsApp />
+      <Suspense fallback={<LoadingFallback />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -88,7 +88,7 @@ const PortfolioSection = () => {
                             whileTap={{ scale: 0.95 }}
                             className="hover:cursor-pointer align-middle group relative px-7 py-3 rounded-full text-center align-middle bg-gradient-to-r from-[#2BFFFF] to-teal-500 text-black shadow-lg shadow-cyan-500/20 transition-all duration-300 text-xs font-bold tracking-widest uppercase hover:shadow-cyan-500/40 overflow-hidden inline-block"
                         >
-                            <span className="relative z-10">Review More</span>
+                            <span className="relative z-10">View More</span>
                             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-[-20deg] -translate-x-[150%] transition-transform duration-700 ease-in-out group-hover:translate-x-[150%]" />
                         </motion.div>
                     </NavLink>

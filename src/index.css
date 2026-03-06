@@ -132,23 +132,43 @@ button:focus-visible {
 
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
 .animate-scroll {
   animation: scroll 80s linear infinite;
+  animation-timing-function: linear;
   display: flex;
   width: max-content;
   will-change: transform;
+  transform: translateZ(0);
 }
 
 .animate-scroll:hover {
   animation-play-state: paused;
+}
+
+/* Improve image rendering and force GPU compositing for smoother transforms */
+.animate-scroll img {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  image-rendering: optimizeQuality;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll,
+  .animate-scroll:hover {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 .font-jakarta {
